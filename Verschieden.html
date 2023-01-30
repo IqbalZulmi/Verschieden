@@ -20,7 +20,7 @@
 
 <body>
     <nav id="navbar-example2" class="navbar blc navbar-dark navbar-expand-md px-3 sticky-top bg-gradient">
-        <div class="container-fluid" data-aos="fade-left" data-aos-duration="500">
+        <div class="container-fluid">
             <a class="navbar-brand" href="Verschieden.html">
                 <img src="favicon_io/favicon-32x32.png" alt="icon" class="me-1">ERSCHIEDEN
             </a>
@@ -692,7 +692,7 @@
                             <i class="fa-brands fa-instagram "></i> 
                             <span>Instagram</span>
                         </a>
-                        <a href="sma26.png" class="b-pg text-decoration-none Facebook my-2 fs-5">
+                        <a href="https://web.facebook.com/profile.php?id=100004909187093" class="b-pg text-decoration-none Facebook my-2 fs-5">
                             <i class="fa-brands fa-facebook"></i> 
                             <span>Facebook</span>
                         </a>
@@ -711,6 +711,18 @@
     <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
     <script src="switch.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var prevScrollpos = window.pageYOffset;
+            window.onscroll = function () {
+                var currentScrollPos = window.pageYOffset;
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar-example2").style.top = "0";
+                } else {
+                    document.getElementById("navbar-example2").style.top = "-80px";
+                }
+                prevScrollpos = currentScrollPos;
+            };
+    </script>
 </body>
 
 </html>
